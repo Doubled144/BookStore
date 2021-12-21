@@ -1,0 +1,78 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "The Lord of the Rings",
+          "price": 23.99,
+          "image": { "fields": { "file": { "url": "/images/LOR.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "The Giver",
+          "price": 10.99,
+          "image": { "fields": { "file": { "url": "/images/TG.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Gathering Blue",
+          "price": 9.99,
+          "image": { "fields": { "file": { "url": "/images/GB.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "The Messenger",
+          "price": 9.99,
+          "image": { "fields": { "file": { "url": "/images/MR.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Son",
+          "price": 9.99,
+          "image": { "fields": { "file": { "url": "/images/SN.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Nineteen Eighty-Four",
+          "price": 18.84,
+          "image": { "fields": { "file": { "url": "/images/NE.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "The Institute",
+          "price": 14.99,
+          "image": { "fields": { "file": { "url": "/images/TI.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "Harry Potter and the Sorceror's Stone",
+          "price": 13.49,
+          "image": { "fields": { "file": { "url": "/images/HP.jpg" } } }
+        }
+      },
+
+      {
+        "sys": { "id": "9" },
+        "fields": {
+          "title": "Fever, Nineteen Seventy-Three",
+          "price": 15.79,
+          "image": { "fields": { "file": { "url": "/images/FS.jpg" } } }
+        }
+      }
+
+    ]
+  }

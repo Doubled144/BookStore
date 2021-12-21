@@ -1,0 +1,320 @@
+/*HTML Sections*/
+/*----------------------------------------------------------*/
+body{
+  background-image: url("images/library_img.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin:0px 0px 0px 0px;
+  font-family:sans-serif, verdana, arial;
+  z-index:1;
+}
+
+header{
+  color:white;
+  font-family: sans-serif;
+  font-style:italic;
+  text-align:center;
+  text-shadow: 3px 3px black;
+  background-image: url("images/paper_img.jpg");
+  background-size:cover;
+  border-top:3px solid black;
+  border-bottom:3px solid black;
+  height:80px;
+}
+
+h1{
+  position:relative;
+  top:15px;
+  padding:5px 0px 5px 0px;
+  margin-top:0px;
+}
+
+footer{
+  color:white;
+  font-style:italic;
+  text-align:center;
+  margin:100px auto auto auto;
+  padding-top:25px;
+  padding-bottom:50px;
+  background-color: black;
+}
+footer img{
+  background-color:white;
+  border:3px inset #B07E4B;
+}
+/*----------------------------------------------------------*/
+/*Book Area Wrapper*/
+/*----------------------------------------------------------*/
+#wrapper{
+  margin-left:auto;
+  margin-right:auto;
+  width:75%;
+}
+/*----------------------------------------------------------*/
+/*Search Bar*/
+/*----------------------------------------------------------*/
+#searchBar{
+  margin-top:25px;
+  width:100%;
+  height:25px;
+  border:3px solid white;
+  box-shadow: 0px 0px 8px 5px white;
+  font-size:24px;
+  font-style:italic;
+}
+.fa-search{
+  float:right;
+  position:relative;
+  top:-25px;
+  font-size:18px;
+}
+#results{
+  color:white;
+  background-color:black;
+  padding:3px;
+  size:14px;
+  font-weight:bold;
+}
+/*----------------------------------------------------------*/
+/*Menu & Cart Buttons*/
+/*----------------------------------------------------------*/
+#menuBtn{
+  position:relative;
+  right:500px;
+  bottom:90px;
+  font-size:34px;
+  cursor:pointer;
+}
+
+#cartBtn{position:relative;
+         left:500px;
+         bottom:45px;
+         font-size:34px;
+         cursor:pointer;
+}
+
+#cartNum{
+  background-color:red;
+  width:30px;
+  text-align:center;
+  position:relative;
+  bottom:65px;
+  left:20px;
+  text-shadow: none;
+  border-radius:95%;
+  font-style:normal;
+  font-size:20px;
+}
+/*----------------------------------------------------------*/
+/*Book Area & Products*/
+/*----------------------------------------------------------*/
+.bookArea{
+  margin-top:50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
+  grid-template-rows: repeat(500px);
+  grid-column-gap:20px;
+  grid-row-gap:100px;
+}
+
+.item{
+  color:white;
+  text-align:center;
+  font-style:italic;
+}
+.item img{
+   border:1.5px solid black;
+}
+
+.desc{
+  border:3px inset #B07E4B;
+  background-color:black;
+  padding: 10px;
+  margin: 25px auto 5px auto;
+  width:200px;
+  
+}
+.desc h4{
+  background-color:#980000;
+  margin-right:auto;
+  margin-left:auto;
+  padding-top:3px;
+  padding-bottom:3px;
+  width: 65%;
+}
+
+.product:hover .book{
+  box-shadow: 0px 0px 8px 5px white;
+  opacity:0.75;
+}
+.product:hover .bagBtn{
+  visibility:visible;
+}
+.bagBtn{
+    position: absolute;
+    background: gold;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: translate(-120px, 240px);
+    padding:5px;
+    cursor: pointer;
+    visibility:hidden;
+}
+.bagBtn:hover{
+  color:white;
+}
+/*----------------------------------------------------------*/
+/*Menu*/
+/*----------------------------------------------------------*/
+.menuOverlay{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(240, 157, 81, 0.5);
+  z-index:3;
+  visibility:hidden;
+}
+.menu{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 4;
+  background-image: url("images/paper_img.jpg");
+  background-size:cover;
+  padding: 1.5rem;
+  text-align:center;
+}
+
+#closeMenuBtn{
+  position: absolute;
+  top: 0;
+  right:0;
+  padding:20px;
+  border:.1px solid black;
+  radius:50%;
+  background-color:black;
+  color:white;
+  cursor:pointer;
+}
+/*----------------------------------------------------------*/
+/*Cart*/
+/*----------------------------------------------------------*/
+.cartOverlay{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(240, 157, 81, 0.5);
+  z-index:3;
+  visibility:hidden;
+}
+.cart{
+  position: fixed;
+  top: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 4;
+  background-image: url("images/paper_img.jpg");
+  background-size:cover;
+  padding: 1.5rem;
+  text-align:center;
+}
+
+#closeBtn{
+  position: absolute;
+  top: 0;
+  left:0;
+  padding:20px;
+  border:.1px solid black;
+  radius:50%;
+  background-color:black;
+  color:white;
+  cursor:pointer;
+}
+
+hr{
+  height: 1px;
+  background-color:black;
+  border: solid black;
+}
+
+.cart-item{
+  margin-top:50px;
+  display:grid;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  align-items:center;
+  font-size:20px;
+}
+
+.remove-item:hover{
+  color:red;
+  cursor:pointer;
+}
+.fa-chevron-up:hover{
+  color:blue;
+  cursor:pointer;
+}
+
+.fa-chevron-down:hover{
+  color:blue;
+  cursor:pointer;
+}
+.item-amount{
+  text-align:center;
+}
+
+.cart-total{
+  margin:20px;
+  text-align:center;
+  font-weight:bold;
+  font-size:28px;
+}
+/*----------------------------------------------------------*/
+/*Cart Footer*/
+/*----------------------------------------------------------*/
+.cart-footer{
+  text-align:center;
+  margin-top: 20px;
+}
+.cart-footer button{
+  margin-bottom: 20px;
+  font-size:14px;
+  width: 160px;
+  text-transform:capitalize;
+  border:3px outlet black;
+  background-color:gold;
+}
+.cart-footer button:hover{
+  cursor:pointer;
+  background-color:white;
+}
+/*----------------------------------------------------------*/
+/*Cart Visibility*/
+/*----------------------------------------------------------*/
+@media screen and (min-width: 768px){
+  .cart{
+    width: 20vw;
+    min-width: 350px;
+  }
+  .menu{
+    width: 20vw;
+    min-width: 350px;
+  }
+}
+.viewCart{
+  visibility: visible;
+}
+.viewMenu{
+  visibility:visible;
+}
+/*----------------------------------------------------------*/
